@@ -92,7 +92,7 @@
     <!-- Navbar -->
     <div class="navbar-header">
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-      <img src="/sites/all/themes/custom/sciprores_theme/img/sciprores.png" class="logo pull-left" alt="SciPro Resources Logo"/>
+      <img src="/sites/all/themes/custom/dsv_thesis_theme/img/sciprores.png" class="logo pull-left" alt="SciPro Resources Logo"/>
       </a>
 
       <?php if (!empty($site_name)): ?>
