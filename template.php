@@ -5,7 +5,7 @@
  * template.php
  */
 
-function sciprores_theme_preprocess_page(&$variables) {
+function thesis_theme_preprocess_page(&$variables) {
   // Add information about the number of sidebars.
   if (!empty($variables['page']['sidebar_first']) && (!empty($variables['page']['sidebar_second']) || !empty($variables['page']['sidebar_menu'])) ) {
     $variables['content_column_class'] = ' class="col-sm-6"';
@@ -51,7 +51,7 @@ function sciprores_theme_preprocess_page(&$variables) {
   }
 }
 
-function sciprores_theme_menu_link(array $variables) {
+function thesis_theme_menu_link(array $variables) {
   $element = $variables['element'];
   $sub_menu = '';
 

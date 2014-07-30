@@ -1,4 +1,4 @@
-name = DSV SciPro Resources theme
+name = DSV Thesis theme
 description = A subtheme of the dsv_drupal_theme, with styles and features only needed by the SciPro Resources system
 core = 7.x
 base theme = dsv_drupal_theme
