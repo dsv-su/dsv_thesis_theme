@@ -73,6 +73,8 @@
  * @ingroup themeable
  */
 ?>
+
+<div class="site">
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="container">
 
@@ -149,28 +151,49 @@
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
+	
+	
 
     <section<?php print $content_column_class; ?>>
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
+	  
+	  
+	  
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if (!empty($title)): ?>
         <h1 class="page-header"><?php print $title; ?></h1>
       <?php endif; ?>
+	  
+	  
+	  
+	  
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>
+	  
+	  
+	  
+	  
       <?php if (!empty($page['help'])): ?>
         <?php print render($page['help']); ?>
       <?php endif; ?>
+	  
+	  
+	  
+	  
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+	  
+	  
+	  
+	  
       <?php print render($page['content']); ?>
       <section id="block-system-lower" class="block block-system clearfix">
         <?php if (!empty($page['content_left'])): ?>
@@ -178,11 +201,17 @@
           <?php print render($page['content_left']); ?>
           </div>
         <?php endif; ?>
+		
+		
+		
+		
         <?php if (!empty($page['content_right'])): ?>
           <div class="col-sm-4" role="complementary">
           <?php print render($page['content_right']); ?>
           </div>
         <?php endif; ?>
+		
+		
       </section>
     </section>
 
@@ -191,23 +220,37 @@
         <?php if (!empty($page['sidebar_menu'])): ?>
           <?php print render($page['sidebar_menu']); ?>
         <?php endif; ?>
+		
+		
+		
         <?php if (!empty($page['sidebar_second'])): ?>
           <?php print render($page['sidebar_second']); ?>
         <?php endif; ?>
+		
+		
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
+	
+	
 
   </div>
 </div>
-<footer class="footer container">
+
+
+</div>
+
+
+<footer class="footer_pierre">
   <?php if (!empty($page['footer_left'])): ?>
     <div id="footer-left" class="footer-section">
       <?php print render($page['footer_left']); ?>
     </div>
   <?php endif; ?>
-  <?php if (!empty($page['footer_right'])): ?>
-    <div id="footer-right" class="footer-section">
-      <?php print render($page['footer_right']); ?>
-    </div>
-  <?php endif; ?>
+  
+  
+  <?php //if (!empty($page['footer_right'])): ?>
+    <!--<div id="footer-right" class="footer-section">-->
+      <?php //print render($page['footer_right']); ?>
+    <!--</div>-->
+  <?php //endif; ?>
 </footer>
