@@ -240,9 +240,9 @@
 </div>
 
 
-<footer class="footer_pierre">
+<footer class="footer_ex">
   <?php if (!empty($page['footer_left'])): ?>
-    <div id="footer-left" class="footer-section">
+    <div id="footer-left" >
       <?php print render($page['footer_left']); ?>
     </div>
   <?php endif; ?>

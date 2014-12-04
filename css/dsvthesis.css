@@ -8,7 +8,7 @@ body {
   font-size: 14px;
 
 
-  
+    background:  url("../img/back_head_wide.png") repeat-x  top;
 }
 
 
@@ -18,12 +18,15 @@ body {
  */
 
  
- .pierre{
-
-font-family: tahoma;
-font-size:50;
-
-
+ .site{
+     max-width: 1143px;
+	 
+    border: 2px #fff solid ;
+    margin: auto;
+	/*box-shadow: 10px 10px 5px #888888;*/
+	box-shadow: 0 0 15px #666;
+       background-color: #fcfcfc;
+    
 }
 
  
@@ -340,11 +343,101 @@ div.main-container section#block-system-lower h4 {
 
  
  
+.footer_ex{
+
+width: 100%;
+   background:  url("../img/back_foot_wide.png") repeat-x  top;
+
+/*background-color: #f9f9f9;*/
+margin-top:20px;
+
+  color: #141414;
+  font-family: Arial,Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  
+   
+}
  
  
  
  
  
+   #navbar div.navbar-collapse.collapse {
+ /*background-color:#a3a86b;*/
+  background-image: url('../img/p-back-menu.png'); 
+ 
+    background-position: left bottom;
+   background-repeat: repeat-x;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding: 0;
+  }
+
  
  
  
+ 
+div.main-container h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+div.main-container h1,
+div.main-container h2,
+div.main-container h3 {
+
+
+
+
+-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); /*ios 7 border-radius-bug */
+-webkit-transform: rotate(0.000001deg); /*mac os 10.6 safari 5 border-radius-bug */
+-webkit-border-radius:10px; 
+-moz-border-radius:10px;
+box-shadow:  1px 1px #9bb2ce;
+border-radius: 5px; 
+overflow: hidden; 
+text-align: center;
+ color: #150865;
+  font-size: 15px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+background-color: #fff;
+ line-height: 28px;
+   
+/* border-style:double;*/
+
+
+}
+
+
+
+ 
+ div.main-container h5{
+
+/* orange*/
+font-family: 'Times New Roman',tahoma,arial ;
+  font-size:16px;
+  font-weight:bold;
+    color:#d55a00;
+}
+
+
+div.main-container h6{
+
+/* blue*/
+font-family: 'Times New Roman',tahoma,arial ;
+  font-size:16px;
+  font-weight:bold;
+    color:#09245c;
+}
+ 
+
+ a {
+  color: #2965a9;
+}
+
+a:hover {
+  color: #2965a9;
+}
+
+a:visited {
+  color: #2965a9;
+}
